@@ -16,4 +16,4 @@ add_custom_target( ${tool_EXE} ALL
 
 set_property( DIRECTORY APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES ${tool_EXE} )
 
-install( PROGRAMS ${tool_EXE} DESTINATION bin )
+install( PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/${tool_EXE} DESTINATION bin )
